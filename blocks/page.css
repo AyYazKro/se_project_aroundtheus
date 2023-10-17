@@ -1,0 +1,29 @@
+.page {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+.page__section {
+  max-width: 882px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.page__content {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 882px;
+  width: 100%;
+}
+@media screen and (max-width: 680px) {
+  .page__section {
+    align-self: center;
+  }
+}
