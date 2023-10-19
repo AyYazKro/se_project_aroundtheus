@@ -20,7 +20,6 @@
   margin-left: 18px;
   grid-area: button;
   border: 1px solid white;
-  border-radius: 2px;
 }
 .profile__edit-button:hover {
   cursor: pointer;
@@ -70,7 +69,7 @@
   margin-right: 24px;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (min-width: 320px) and (max-width: 620px) {
   .profile {
     flex-direction: column;
   }
@@ -88,13 +87,11 @@
     font-size: 22px;
     line-height: normal;
     width: 196px;
-    height: 22px;
     flex-shrink: 0;
   }
   .profile__description {
     color: #fff;
     text-align: center;
-    font-family: Inter;
     font-size: 14px;
     font-style: normal;
     line-height: normal;
