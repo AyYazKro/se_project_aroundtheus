@@ -24,6 +24,10 @@
     padding-top: 48px;
     padding-bottom: 0;
   }
+  .footer__text {
+    margin: 48px 19px 36px;
+    font-size: 14px;
+  }
   .footer__title {
     font-size: 14px;
     padding-bottom: 36px;
