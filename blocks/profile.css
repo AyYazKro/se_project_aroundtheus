@@ -33,7 +33,6 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 400px;
 }
 
 .profile__edit-button {
@@ -92,46 +91,18 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1150px) {
-  .profile__edit-button {
-    margin-right: 20px;
-  }
-
-  .profile__add-button {
-    width: 75px;
-  }
-}
-
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 320px) and (max-width: 770px) {
   .profile {
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
   }
 
-  .profile__name {
-    font-size: 32px;
+  .profile__image {
+    margin: 0;
   }
-
-  .profile__description {
-    text-align: center;
-  }
-
-  .profile__add-button {
-    margin: 36px 0 0;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .profile {
-    margin: 42px 19px 0;
-  }
-
-  .profile__avatar {
-    margin: 0 auto 26.25px;
-  }
-
   .profile__info {
     display: flex;
     flex-wrap: wrap;
@@ -141,32 +112,39 @@
     margin-bottom: 36px;
   }
 
-  .profile__name {
-    max-width: 200px;
-    font-size: 22px;
-    line-height: normal;
+  .profile__description {
+    width: 100%;
+    max-width: 282px;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
   }
 
   .profile__edit-button {
-    margin: 0;
     width: 18px;
     height: 18px;
-  }
-
-  .profile__edit-button-image {
-    height: 7.5px;
-    width: 7.5px;
-  }
-
-  .profile__description {
-    width: 100%;
-    text-align: center;
-    font-size: 14px;
-    max-width: 282px;
+    margin: 4px 15px 14px 10px;
   }
 
   .profile__add-button {
-    max-width: 100%;
-    background-size: 16px 16px;
+    margin: 0;
+    padding: 0%;
+    width: 282px;
+  }
+
+  .profile__title {
+    max-width: 196px;
+    font-size: 22px;
+    margin: 0;
+    line-height: 26px;
+  }
+}
+@media screen and (min-width: 771px) and (max-width: 835px) {
+  .profile__add-button {
+    width: 50px;
+  }
+
+  .profile__title {
+    font-size: 22px;
   }
 }
