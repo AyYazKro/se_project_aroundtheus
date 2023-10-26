@@ -1,26 +1,25 @@
 .header {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 880px;
+  margin-top: 45px;
+  padding: 0 0 30px;
   border-bottom: 1px solid rgba(84, 84, 84, 0.7);
 }
-
 .header__logo {
-  margin: 0;
-  width: 172px;
+  width: 173px;
   height: 33px;
-  padding: 0 0 41px 0;
+  padding-left: 27px;
+  padding-top: 28px;
 }
 
-@media screen and (max-width: 320px) {
-  .header {
-    max-width: 100%;
-  }
-
+@media screen and (max-width: 599px) {
   .header__logo {
-    margin: 0 0 32px 27px;
-    padding: 0;
     width: 126px;
     height: 24px;
+  }
+  .header {
+    margin-top: 28px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    max-width: 100%;
   }
 }

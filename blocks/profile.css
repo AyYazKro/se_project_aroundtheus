@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-.profile__avatar {
+.profile__image {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -23,7 +23,7 @@
   margin: 22px 0 21px;
 }
 
-.profile__name {
+.profile__title {
   margin: 0;
   font-family: "Inter", "Arial", sans-serif;
   font-size: 42px;
@@ -88,22 +88,26 @@
 @media screen and (min-width: 320px) and (max-width: 599px) {
   .profile {
     flex-direction: column;
-    margin: auto;
-    max-width: 100%;
-    height: auto;
+    max-width: 282px;
+    padding-bottom: 0;
     justify-content: center;
   }
-
-  .profile__avatar {
+  .profile__image {
     margin: 0;
   }
   .profile__info {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 36px;
+    max-width: 282px;
+    margin-top: 15px;
+    justify-content: center;
+  }
+  .profile__title {
+    font-size: 22px;
+    max-width: 227px;
+    margin: 0;
+    line-height: 26.63px;
   }
 
   .profile__description {
@@ -111,34 +115,41 @@
     max-width: 282px;
     font-size: 14px;
     text-align: center;
-    margin: 0;
+    margin: 0 0 36px;
+    line-height: 21.78px;
   }
-
   .profile__edit-button {
     width: 18px;
     height: 18px;
-    margin: 4px 15px 14px 10px;
+    margin: 0 15px;
   }
 
   .profile__add-button {
     margin: 0;
-    padding: 0%;
     width: 282px;
+    padding: 0;
   }
 
-  .profile__name {
-    max-width: 196px;
-    font-size: 22px;
-    margin: 0;
-    line-height: 26px;
-  }
-}
-@media screen and (min-width: 771px) and (max-width: 835px) {
-  .profile__add-button {
-    width: 50px;
-  }
-
-  .profile__name {
-    font-size: 22px;
+  @media screen and (min-width: 600px) and (max-width: 879px) {
+    .profile {
+      max-width: 580px;
+      margin: 0 auto;
+    }
+    .profile__add-button {
+      margin: 0 auto;
+      max-width: 580px;
+      width: 50px;
+      height: 50px;
+    }
+    .profile__edit-button {
+      width: 18px;
+      height: 18px;
+    }
+    .profile__info {
+      grid-template-columns: auto;
+    }
+    .profile__title {
+      font-size: 30px;
+    }
   }
 }
