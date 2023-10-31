@@ -107,6 +107,7 @@
     font-size: 14px;
     display: flex;
     justify-content: center;
+    max-width: 230px;
   }
   .profile__add-button {
     margin: 36px 0 36px;
@@ -118,6 +119,7 @@
   .profile__title {
     font-size: 22px;
     line-height: 26.63px;
+    max-width: 240px;
   }
   .profile__image {
     margin-top: 42px;
