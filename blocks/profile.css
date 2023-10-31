@@ -55,7 +55,7 @@
 
 .profile__description {
   font-size: 18px;
-  line-height: normal;
+  line-height: 22px;
   font-weight: 400;
   grid-area: description;
   margin: 0;
