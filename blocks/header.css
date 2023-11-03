@@ -23,6 +23,7 @@
 @media screen and (min-width: 320px) {
   .header {
     padding: 28px 0 32px 27px;
+    box-sizing: border-box;
   }
 
   .header__logo {
