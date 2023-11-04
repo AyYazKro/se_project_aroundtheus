@@ -26,5 +26,7 @@
   .footer__text {
     font-size: 14px;
     margin: 48px 0 38px 19px;
+    text-align: 100%;
+    width: 100%;
   }
 }
