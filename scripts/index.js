@@ -38,4 +38,3 @@ const initialCards = [
 ];
 
 console.log(initialCards);
-//Create my own arrays and objects
