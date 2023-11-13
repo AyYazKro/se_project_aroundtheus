@@ -1,9 +1,9 @@
-
 @media screen and (max-width: 890px) {
   .header__logo {
     padding-left: 27px;
   }
 }
+
 @media screen and (max-width: 440px) {
   .header {
     padding: 28px 0 0;
@@ -20,11 +20,13 @@
   .header {
     margin-top: 45px;
   }
+
   .header__logo {
     width: 173px;
     height: 33px;
     margin-bottom: 41px;
   }
+
 }
 
 .header {
